@@ -1,0 +1,278 @@
+body {
+    margin: 0px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.bandeau_menu {
+    /* display: flex;
+    justify-content: end; */
+    background: #17234E;
+    /* min-width: 444px; */
+    flex: 1 0 auto;
+}
+
+.bandeau_static {
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+
+/*debut boutton*/
+
+.button {
+    transition-duration: 0.2s;
+    border-radius: 3px;
+    background-color: #546bbd;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: visible;
+    box-sizing: inherit;
+}
+
+.accueil,
+.nos_locations,
+.nous_trouver {
+    /* style de font pour le menu d'en-tete */
+    background: #546bbd;
+    color: aliceblue;
+    margin: 8px;
+    display: inline-block;
+}
+
+
+/*fin bouton*/
+
+ul {
+    padding: 0;
+}
+
+.bandeau_menu_droite {
+    /* display: flex;
+    justify-content: space-evenly; */
+    text-align: right;
+    width: 100%;
+}
+
+
+/*debut logo en haut a gauche */
+
+.bandeau_menu>a {
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+/*debut logo en haut a gauche */
+
+.gros_titre a {
+    /* positionnement du titre */
+    text-decoration: none;
+    padding: 5px 20px 0 20px;
+    position: relative;
+    float: left;
+    /* style du titre */
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Abril Fatface', cursive;
+    font-style: italic;
+    color: red;
+}
+
+
+/*fin logo en haut a gauche */
+
+
+/*debut image d'intro*/
+
+.Panneau_entree {
+    position: absolute;
+    padding-left: 10px;
+    top: 315px;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(14, 24, 70, 0.7);
+    min-width: 200px;
+}
+
+.Panneau_entree>h1 {
+    position: relative;
+    font-size: 30px;
+}
+
+.image_banniere {
+    background: url("../CSS/img/escargot_conteneur.jpg") no-repeat center;
+    background-size: cover;
+    height: 460px;
+    position: relative;
+}
+
+
+/*fin image d'intro*/
+
+
+/*debut mise en page du bandeau info*/
+
+.bandeau_fonction {
+    background: #17234E;
+    color: white;
+    font-size: 50px;
+    font-family: 'Lato';
+    font-weight: bolder;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.Titre_fonction_entreprise {
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #17234E;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.Particuliers {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.Particuliers:hover {
+    transition: 0.4s;
+    background-color: rgba(37, 77, 255, 0.6);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Professionnels {
+    margin-left: 30px;
+}
+
+.Professionnels:hover {
+    transition: 0.4s;
+    background-color: rgba(37, 77, 255, 0.6);
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+/*fin mise en page du bandeau info*/
+
+
+/*debut bandeau informatif récap*/
+
+.liste_utile {
+    text-align: center;
+}
+
+.Securise,
+.Accessible {
+    display: inline-block;
+}
+
+h2 {
+    color: #17234E;
+    font-size: bolder;
+}
+
+.Securise,
+.Accessible {
+    font-size: 1.1em;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    min-width: 180px;
+    ;
+}
+
+.Securise:hover,
+.Accessible:hover {
+    transition: 0.4s;
+    background-color: rgba(37, 77, 255, 0.6);
+    padding: 8px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+/*fin bandeau informatif récap*/
+
+
+/*mise en page du footer */
+
+footer {
+    border-top-style: groove;
+}
+
+.footer {
+    background: #17234E;
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.footer div {
+    display: inline-block;
+    text-align: start;
+    padding: 0 50px 0 50px;
+}
+
+.footer_titre {
+    background: #17234E;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+.footer div a {
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    font-size: 24px;
+    font-style: oblique;
+}
+
+.Particuliers a {
+    text-decoration: none;
+    font-family: 'Lato';
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #17234E;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.Particuliers a:hover {
+    text-decoration: none;
+    transition: 0.4s;
+    background-color: rgba(37, 77, 255, 0.6);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+}
