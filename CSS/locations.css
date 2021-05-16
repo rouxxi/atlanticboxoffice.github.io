@@ -4,7 +4,7 @@ body {
 
 .header__nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -12,8 +12,10 @@ body {
     /* display: flex;
     justify-content: end; */
     background: #17234e;
-    /* min-width: 444px; */
-    flex: 1 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .bandeau_static {
@@ -204,6 +206,14 @@ h3 {
     font-style: oblique;
 }
 
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+h2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
 
 /*debut slider*/
 
@@ -296,3 +306,49 @@ input[name='r'] {
 
 
 /*fin slider*/
+
+
+@media screen and (min-width: 768px) {
+    .header__nav {
+        flex-wrap: nowrap;
+    }
+
+    .gros_titre a {
+        /* positionnement du titre */
+        width: 350px;
+
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 20px 0 20px;
+        position: relative;
+        float: left;
+        /* style du titre */
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'Abril Fatface', cursive;
+        font-style: italic;
+        color: red;
+    }
+    /*fin logo en haut a gauche */
+    /*debut image d'intro*/
+    .Panneau_entree {
+        position: absolute;
+        padding-left: 10px;
+        top: 315px;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: rgba(14, 24, 70, 0.7);
+        min-width: 200px;
+    }
+    .Panneau_entree>h1 {
+        position: relative;
+        font-size: 30px;
+    }
+    .image_banniere {
+        background: url('../CSS/img/grand-ecran-bg.jpg') no-repeat bottom;
+        background-size: cover;
+        height: 600px;
+        position: relative;
+    }
+}

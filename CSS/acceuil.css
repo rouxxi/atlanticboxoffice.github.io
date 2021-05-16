@@ -4,7 +4,7 @@ body {
 
 .header__nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -12,8 +12,10 @@ body {
     /* display: flex;
     justify-content: end; */
     background: #17234e;
-    /* min-width: 444px; */
-    flex: 1 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .bandeau_static {
@@ -81,7 +83,6 @@ ul {
 
 
 /*debut logo en haut a gauche */
-
 .gros_titre a {
     /* positionnement du titre */
     text-decoration: none;
@@ -89,7 +90,7 @@ ul {
     position: relative;
     float: left;
     /* style du titre */
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     font-family: 'Abril Fatface', cursive;
     font-style: italic;
@@ -140,8 +141,13 @@ ul {
     text-align: center;
 }
 
+
 h1 {
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+h2 {
+    font-size: 30px;
     font-weight: bolder;
 }
 
@@ -195,7 +201,7 @@ h1 {
 }
 
 h2 {
-    color: #17234e;
+    color:white;
     font-size: bolder;
 }
 
@@ -265,9 +271,16 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+    .header__nav {
+        flex-wrap: nowrap;
+    }
+
     .gros_titre a {
         /* positionnement du titre */
+        width: 350px;
+
         text-decoration: none;
+        text-align: center;
         padding: 5px 20px 0 20px;
         position: relative;
         float: left;
